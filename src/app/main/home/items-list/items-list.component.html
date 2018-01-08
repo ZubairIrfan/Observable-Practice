@@ -1,0 +1,6 @@
+<div class="main-container">
+  <div *ngFor="let item of itemsList; let i=index">
+    <app-item class="items" [item]="item"></app-item>
+  </div>
+  <p *ngIf="itemsList.length ==0 " class="emptyList"> No Items Available in this Category </p>
+</div>

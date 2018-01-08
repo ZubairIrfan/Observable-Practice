@@ -1,0 +1,19 @@
+<div class="main-Container">
+  <div class="sub-container">
+    <div class="imgContainer"> 
+    <img [src]="item.imagePath">
+    </div>
+    <div class="details">
+<h2> {{item.name}}</h2>
+<p><b>Category : </b>{{item.category}}</p>
+<p> <b>Quanity : </b>{{item.quantity}}</p>
+<p> <b>Prcie per Item : </b>{{item.price}}</p>
+<p> <b>Description : </b>{{item.description}}</p>
+   
+  </div>
+  <div class="addToCart">
+      <button *ngIf="item.available" (click)="addItemToCart(item)">Add to Cart</button>
+      <p  *ngIf="!item.available"> Item not available</p>
+    </div>
+</div>
+

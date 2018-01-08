@@ -1,0 +1,18 @@
+
+<div class="main-container">
+  <div *ngIf="myCart.length > 0 " class="myCartInfo">
+<h3>Your Cart Info</h3>
+  <p> Total Items : {{totalItemsCount}}</p>
+  <p> Total Price : {{totalPrice}}</p>
+  <button> Order Items </button>
+  </div>
+  
+  <div *ngIf="myCart.length >0 " class="cartList">
+<h2>Cart Items</h2>
+    <div *ngFor="let item of myCart; let i=index">
+      <app-my-cart-item class="items" [item]="item"></app-my-cart-item>
+    </div>
+   
+  </div>
+  <p *ngIf="myCart.length == 0 " class="emptyList"> Your Cart is Empty Right now </p>
+</div>

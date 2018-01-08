@@ -1,0 +1,29 @@
+.main-container{
+  margin-top: 120px;
+  width: 100%;
+  text-align: center;
+  .inputContainer{
+  width: 70%;
+text-align: left;
+margin: 0% 15% 1% 15%;
+p{
+  font-size: 18px;
+}
+  textarea{
+    line-height: 1;
+    font-size: 14px;
+
+  }
+  }
+}
+button{
+  background: #4a3e08;
+  border-radius: 6px;
+  color: white;
+  padding: 4px;
+  box-shadow: 1px 1px 10px black;
+  height: 50px;
+  cursor: pointer;
+  width: 200px;
+  margin-top: 15px;
+}

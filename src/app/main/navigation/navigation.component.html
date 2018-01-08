@@ -1,0 +1,16 @@
+<div class="header">
+  <div class="logo">
+    <img src="assets/img/logo.png" alt="">
+  </div>
+  <div class="NavButtonsContainer">
+<div class="flex-Container">
+    <div class="buttons" (click)="navigateTo(0)"> Home</div>
+    <div class="buttons" (click)="navigateTo(1)"> MyCart</div>
+    <div class="buttons" (click)="navigateTo(2)"> Add Items</div>
+  </div>
+</div>
+<div class="counter">
+  <p><b> Total Items Count : </b>{{totalItemsCount}}</p>
+  <p><b> Cart Items Count : </b>{{myCartCount}}</p>
+</div>
+</div>

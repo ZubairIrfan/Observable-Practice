@@ -1,0 +1,31 @@
+.mainContainer{
+  display: flex;
+  margin-top: 100px;
+  .nav-buttons{
+    position: fixed;
+    height: 100%;
+    width: 18%;
+    line-height: 2;
+    background: gray;
+    padding: 10px;
+    display: inline-block;
+    .button{
+      width: 100%;
+      text-align: center;
+      font-size: 18px;
+      color: #ffffff;
+      background: #0d0e15;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+  }
+  .itemsList{
+    width: 80%;
+    margin-left: 20%;
+    display: inline-block;
+  }
+  .selectedButton{
+    background: #3d4cb7 !important;
+  }
+}

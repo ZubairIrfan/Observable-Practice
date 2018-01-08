@@ -1,0 +1,18 @@
+<div class="main-Container">
+    <div class="sub-container">
+      <div class="imgContainer"> 
+      <img [src]="item.imagePath">
+      </div>
+      <div class="details">
+  <h4> {{item.name}}</h4>
+  <p><b>Category : </b>{{item.category}}</p>
+  <p> <b>Price : </b>{{item.price}}</p>
+  <p> <b>Quantity : </b>{{item.quantity}}</p>
+  <p> <b>Description : </b>{{item.description}}</p>
+     
+    </div>
+    <div class="addToCart">
+        <button (click)="removeFromCart(item)">Remove</button>
+      </div>
+  </div>
+  

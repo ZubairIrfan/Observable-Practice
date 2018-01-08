@@ -1,0 +1,5 @@
+<div class="main"> <app-navigation class="navigation"></app-navigation>
+<app-home *ngIf="route && route._routerState.snapshot && route._routerState.snapshot.url=='/home'"></app-home>
+<app-my-cart *ngIf="route && route._routerState.snapshot && route._routerState.snapshot.url=='/myCart'"></app-my-cart>
+<app-add-items *ngIf="route && route._routerState.snapshot && route._routerState.snapshot.url=='/addItems'"></app-add-items>
+</div>

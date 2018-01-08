@@ -1,0 +1,47 @@
+.main-container{
+  display: flex;
+  margin-top: 100px;
+  width: 100%;
+  .myCartInfo{
+width:20%;
+position: fixed;
+color: white;
+display: inline-block;
+padding-left: 2em;
+height: 100%;
+background: grey;
+  }
+  .cartList{
+ width: 80%;
+ margin-left: 22%;
+ display: inline-block;
+    h2{
+      text-align: center;
+    }
+  .items{
+    border: 1 px solid grey;
+    border-radius: 6px;
+    background: lightblue;
+  }
+ 
+}
+.emptyList{
+  text-align: center;
+  font-size: 20px;
+  width: 100%;
+}
+  }
+  p{
+    background: gray;
+  }
+  button{
+    background: #4a3e08;
+    border-radius: 6px;
+    color: white;
+    padding: 4px;
+    box-shadow: 1px 1px 10px black;
+    height: 50px;
+    cursor: pointer;
+    width: 200px;
+    margin-top: 15px;
+  }

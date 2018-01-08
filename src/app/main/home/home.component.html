@@ -1,0 +1,14 @@
+<div class="mainContainer">
+<div class="nav-buttons">
+
+  <div class="button" [ngClass]="{'selectedButton': selectedCategory=='All'}" (click)="switchCategory('All')"> All Items</div>
+  <div class="button" [ngClass]="{'selectedButton': selectedCategory=='Mobiles'}" (click)="switchCategory('Mobiles')"> Mobile Phones</div>
+  <div class="button" [ngClass]="{'selectedButton': selectedCategory=='Laptops'}" (click)="switchCategory('Laptops')"> Laptops</div>
+  <div class="button" [ngClass]="{'selectedButton': selectedCategory=='Tablets'}" (click)="switchCategory('Tablets')"> Tablets</div>
+  <div class="button" [ngClass]="{'selectedButton': selectedCategory=='Accessories'}" (click)="switchCategory('Accessories')"> Accessories</div>
+  
+</div>
+<div class="itemsList">
+<app-items-list></app-items-list>
+</div>
+</div>

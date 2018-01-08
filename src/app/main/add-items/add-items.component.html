@@ -1,0 +1,35 @@
+<div class="main-container">
+
+  <h2> Add Items</h2>
+  <div class="inputContainer">
+    <p> <b>Item Name : </b> </p>
+    <textarea [(ngModel)]= "item.name" rows="1" cols="50" ></textarea>
+  </div>
+  <div class="inputContainer">
+      <p> <b>Category : </b> </p>
+      <select [(ngModel)]="item.category">
+        <option *ngFor="let category of categories" [value]="category">{{category}}</option>
+        
+      </select>
+    </div>
+  <div class="inputContainer">
+      <p> <b>Quantity : </b> </p>
+      <select [(ngModel)]="item.quantity" >
+          <option *ngFor="let num of numbers; let i=index " [value]="(i+1)">{{i+1}}</option>
+        </select>
+    </div>
+    <div class="inputContainer">
+        <p> <b>Price per Item : </b> </p>
+        <textarea [(ngModel)]= "item.price" rows="1" cols="10" ></textarea>
+      </div>
+      <div class="inputContainer">
+          <p> <b>Description : </b> </p>
+          <textarea [(ngModel)]= "item.description" rows="1" cols="50" ></textarea>
+        </div>
+      <div class="inputContainer">
+          <p> <b>Image Path : </b> </p>
+          <textarea [(ngModel)] = "item.imagePath" rows="1" cols="50" ></textarea>
+        </div>
+
+        <button (click)="addItemToList()">Add Item to List</button>
+</div>
