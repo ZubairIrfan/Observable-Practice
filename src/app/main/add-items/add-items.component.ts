@@ -19,7 +19,8 @@ item:any={
   ngOnInit() {
   }
   addItemToList(){
-     this.itemService.addItem(new item(ItemsService.id,this.item.name,this.item.quantity,this.item.imagePath,this.item.description,this.item.category,this.item.price))
- this.item={};
+     this.itemService.addItem(new item(ItemsService.id,this.item.name,this.item.quantity,this.item.imagePath,this.item.description,this.item.category,this.item.price));
+     alert('Item Successfully Added to Cart');
+    this.item={};
     }
 }

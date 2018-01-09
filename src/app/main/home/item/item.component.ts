@@ -2,8 +2,6 @@ import { Component, OnInit, Injectable } from '@angular/core';
 import { Input } from '@angular/core';
 import { item } from '../../../Shared/item';
 import { ItemsService } from '../../../Services/items.service';
-import {MatSnackBar} from '@angular/material';
-
 @Component({
   selector: 'app-item',
   templateUrl: './item.component.html',
@@ -11,9 +9,9 @@ import {MatSnackBar} from '@angular/material';
 })
 
 export class ItemComponent implements OnInit {
-  @Input() 
+  @Input()  
   item:item;
-  constructor(private itemService:ItemsService,public snackBar: MatSnackBar) {
+  constructor(private itemService:ItemsService) {
     console.log(item);
    }
 
@@ -21,8 +19,9 @@ export class ItemComponent implements OnInit {
   }
   addItemToCart(item){
     this.itemService.addItemsToCart(item);
-    this.snackBar.openFromComponent(ItemComponent, { text:'Item Added to Cart Successfully',
-      duration: 500,
-    });
+    alert('Item Successfully Added to Cart');
+    // this.snackBar.openFromComponent(ItemComponent, {
+    //   duration: 500,
+    // });
   }
-}
+} 
